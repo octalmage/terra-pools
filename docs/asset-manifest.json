@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.78efb169.chunk.css",
-    "main.js": "/static/js/main.17d2c06c.chunk.js",
-    "main.js.map": "/static/js/main.17d2c06c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.d2e54a3c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.d2e54a3c.js.map",
-    "static/js/2.06aa69f1.chunk.js": "/static/js/2.06aa69f1.chunk.js",
-    "static/js/2.06aa69f1.chunk.js.map": "/static/js/2.06aa69f1.chunk.js.map",
-    "static/js/3.9b45a868.chunk.js": "/static/js/3.9b45a868.chunk.js",
-    "static/js/3.9b45a868.chunk.js.map": "/static/js/3.9b45a868.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.78efb169.chunk.css.map": "/static/css/main.78efb169.chunk.css.map",
-    "static/js/2.06aa69f1.chunk.js.LICENSE.txt": "/static/js/2.06aa69f1.chunk.js.LICENSE.txt"
+    "main.css": "/terra-pools/static/css/main.78efb169.chunk.css",
+    "main.js": "/terra-pools/static/js/main.17d2c06c.chunk.js",
+    "main.js.map": "/terra-pools/static/js/main.17d2c06c.chunk.js.map",
+    "runtime-main.js": "/terra-pools/static/js/runtime-main.e43334da.js",
+    "runtime-main.js.map": "/terra-pools/static/js/runtime-main.e43334da.js.map",
+    "static/js/2.06aa69f1.chunk.js": "/terra-pools/static/js/2.06aa69f1.chunk.js",
+    "static/js/2.06aa69f1.chunk.js.map": "/terra-pools/static/js/2.06aa69f1.chunk.js.map",
+    "static/js/3.9b45a868.chunk.js": "/terra-pools/static/js/3.9b45a868.chunk.js",
+    "static/js/3.9b45a868.chunk.js.map": "/terra-pools/static/js/3.9b45a868.chunk.js.map",
+    "index.html": "/terra-pools/index.html",
+    "static/css/main.78efb169.chunk.css.map": "/terra-pools/static/css/main.78efb169.chunk.css.map",
+    "static/js/2.06aa69f1.chunk.js.LICENSE.txt": "/terra-pools/static/js/2.06aa69f1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d2e54a3c.js",
+    "static/js/runtime-main.e43334da.js",
     "static/js/2.06aa69f1.chunk.js",
     "static/css/main.78efb169.chunk.css",
     "static/js/main.17d2c06c.chunk.js"

@@ -147,17 +147,7 @@ function App() {
           absorbed.
         </li>
       </ul>
-      <p>
-        Pool values above are displayed in{" "}
-        <a
-          rel="noreferrer"
-          target="_blank"
-          href="https://docs.terra.money/docs/learn/glossary.html#sdr"
-        >
-          TerraSDR
-        </a>
-        .
-      </p>
+    
       <p>
         <b>
           This is a very high level overview. Visit the{" "}
@@ -171,7 +161,19 @@ function App() {
           on the market module for more information.
         </b>
       </p> */}
-      <p>Estimated fee for a 1000 UST to Luna swap: {slippage.toFixed(2)}%</p>
+      <p>
+        Estimated fee for a 1000 UST to Luna swap based on current pool weights: {slippage.toFixed(2)}% <br />
+        <sub>
+        Pool values above are displayed in{" "}
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://docs.terra.money/docs/learn/glossary.html#sdr"
+        >
+          TerraSDR
+        </a>
+        .</sub>
+      </p>
       <p>Learn more: <a href="https://docs.terra.money/docs/develop/module-specifications/spec-market.html">Terra docs on the Market module.</a></p>
     </div>
   );

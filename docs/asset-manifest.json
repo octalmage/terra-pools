@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/terra-pools/static/css/main.6b835707.chunk.css",
-    "main.js": "/terra-pools/static/js/main.22bdb235.chunk.js",
-    "main.js.map": "/terra-pools/static/js/main.22bdb235.chunk.js.map",
+    "main.js": "/terra-pools/static/js/main.7c0b966b.chunk.js",
+    "main.js.map": "/terra-pools/static/js/main.7c0b966b.chunk.js.map",
     "runtime-main.js": "/terra-pools/static/js/runtime-main.e43334da.js",
     "runtime-main.js.map": "/terra-pools/static/js/runtime-main.e43334da.js.map",
-    "static/js/2.4b632c7e.chunk.js": "/terra-pools/static/js/2.4b632c7e.chunk.js",
-    "static/js/2.4b632c7e.chunk.js.map": "/terra-pools/static/js/2.4b632c7e.chunk.js.map",
+    "static/js/2.6b977baa.chunk.js": "/terra-pools/static/js/2.6b977baa.chunk.js",
+    "static/js/2.6b977baa.chunk.js.map": "/terra-pools/static/js/2.6b977baa.chunk.js.map",
     "static/js/3.9b45a868.chunk.js": "/terra-pools/static/js/3.9b45a868.chunk.js",
     "static/js/3.9b45a868.chunk.js.map": "/terra-pools/static/js/3.9b45a868.chunk.js.map",
     "index.html": "/terra-pools/index.html",
     "static/css/main.6b835707.chunk.css.map": "/terra-pools/static/css/main.6b835707.chunk.css.map",
-    "static/js/2.4b632c7e.chunk.js.LICENSE.txt": "/terra-pools/static/js/2.4b632c7e.chunk.js.LICENSE.txt"
+    "static/js/2.6b977baa.chunk.js.LICENSE.txt": "/terra-pools/static/js/2.6b977baa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e43334da.js",
-    "static/js/2.4b632c7e.chunk.js",
+    "static/js/2.6b977baa.chunk.js",
     "static/css/main.6b835707.chunk.css",
-    "static/js/main.22bdb235.chunk.js"
+    "static/js/main.7c0b966b.chunk.js"
   ]
 }

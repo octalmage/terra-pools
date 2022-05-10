@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import { useLCDClient } from "@terra-money/wallet-provider";
+import { Coin } from "@terra-money/terra.js";
 import React from "react";
 import { BarChart, Bar, Cell, YAxis, ReferenceLine, LabelList } from "recharts";
 import abbreviate from "./abbreviate";
@@ -9,10 +10,9 @@ const colors = ["#0088FE", "#FFBB28"];
 
 function App() {
   const [isAnimation, setIsAnimation] = useState(true);
-  const [config, setConfig] = useState([[], [49000000, 51000000]]);
+  const [config, setConfig] = useState([[], [49000000, 51000000], 0]);
 
-  const [data, scale] = config;
-  const lcd = useLCDClient();
+  const [data, scale, slippage] = config;
   const lcd = useLCDClient({ url: 'https://solitary-wild-log.terra-mainnet.quiknode.pro/e29ad894ff7e7809f2a3fbfa8fd658e94eb67cdf' });
 
   useEffect(() => {
@@ -31,6 +31,11 @@ function App() {
         scale = [40000000, 59000000];
       }
 
+      const terraSwapRate = await lcd.market.swapRate(new Coin('uusd', 1000000000), 'uluna');
+      const exchangeRate = await lcd.oracle.exchangeRate('uusd');
+      // Expect Luna returned if there was no fee, based on oracle price.
+      const perfectSwapRate = 1000 / exchangeRate.amount.toNumber();
+      
       setConfig([
         [
           {
@@ -43,17 +48,16 @@ function App() {
           },
         ],
         scale,
+        100 - (terraSwapRate.amount.times(0.000001).toNumber() / perfectSwapRate) * 100,
       ]);
     };
 
     fetchPools();
-    const t = setInterval(fetchPools, 1000);
+    const t = setInterval(fetchPools, 7000);
     return () => {
       clearTimeout(t);
     };
-  }, [lcd.market]);
-
-  console.log("render");
+  }, [lcd.market, lcd.oracle]);
 
   const Chart = React.memo(() => (
     <BarChart
@@ -167,6 +171,7 @@ function App() {
           on the market module for more information.
         </b>
       </p> */}
+      <p>Estimated fee for a 1000 UST to Luna swap: {slippage.toFixed(2)}%</p>
       <p>Learn more: <a href="https://docs.terra.money/docs/develop/module-specifications/spec-market.html">Terra docs on the Market module.</a></p>
     </div>
   );

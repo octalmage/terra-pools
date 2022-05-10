@@ -13,6 +13,7 @@ function App() {
 
   const [data, scale] = config;
   const lcd = useLCDClient();
+  const lcd = useLCDClient({ url: 'https://solitary-wild-log.terra-mainnet.quiknode.pro/e29ad894ff7e7809f2a3fbfa8fd658e94eb67cdf' });
 
   useEffect(() => {
     const fetchPools = async () => {

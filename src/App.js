@@ -61,7 +61,7 @@ function App() {
 
   const Chart = React.memo(() => (
     <BarChart
-      style={{ marginTop: "-100px" }}
+      style={{ marginTop: "-50px" }}
       width={800}
       height={400}
       data={data}
@@ -110,7 +110,7 @@ function App() {
         maxWidth: 800,
       }}
     >
-      <h2 style={{ lineHeight: "1rem" }}>
+      <h2 style={{ lineHeight: "1.2rem" }}>
         Relationship between Luna / Terra Stable assets in the Market module<br />
         <span style={{ fontWeight: "normal", fontSize: "16px" }}>
           (live view, updated every block):{" "}
